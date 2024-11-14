@@ -4,76 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manuel History</title>
+    
 
     <!-- Enlace al archivo de estilos CSS -->
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Script para alternar temas y desplazarse a la sección deseada -->
+    <style>
+        /* Estilos para el iframe (opcional) */
+        iframe {
+            width: 560px;
+            height: 315px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Barra de navegación -->
-    <nav>
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/mq6aUd_yDTA?si=6VohldkkgEnCCcwZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </nav>
-
-    <!-- Sección de inicio -->
-    <section id="inicio" class="section">
-        <div class="container">
-            <h1>Bienvenido a VoltCalc</h1>
-            <p>Tu herramienta confiable para calcular la caída de voltaje en circuitos eléctricos.</p>
-            <button class="btn" onclick="scrollToSection('ejercicio')">Ir a Resolver Ejercicio</button>
-        </div>
-    </section>
-
-    <!-- Sección de calculadora -->
-    <section id="calculadora" class="section">
-        <div class="container">
-            <h2>Calculadora de Caída de Voltaje</h2>
-            <p>Ingresa la corriente y la resistencia para calcular la caída de voltaje.</p>
-            <div class="calculator">
-                <label for="corriente">Corriente (A):</label>
-                <input type="number" id="corriente" placeholder="Ej: 10">
-                <label for="resistencia">Resistencia (Ω):</label>
-                <input type="number" id="resistencia" placeholder="Ej: 5">
-                <button class="btn" onclick="calcularVoltaje()">Calcular</button>
-                <div id="resultado"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de configuración -->
-    <section id="configuracion" class="section">
-        <div class="container">
-            <h2>Configuración</h2>
-            <p>Personaliza el tema de la página a tu gusto.</p>
-            <div class="config">
-                <label for="colorTema">Elige un tema de color:</label>
-                <select id="colorTema" onchange="cambiarTema()">
-                    <option value="default">Por defecto</option>
-                    <option value="dark">Oscuro</option>
-                    <option value="light">Claro</option>
-                </select>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección para resolver el ejercicio en texto -->
-    <section id="ejercicio" class="section">
-        <div class="container">
-            <h2>Resolver Ejercicio</h2>
-            <p>Introduce el problema en formato de texto para calcular la caída de voltaje.</p>
-            <textarea id="ejercicioTexto" rows="6" placeholder="Escribe el ejercicio aquí..."></textarea>
-            <button class="btn" onclick="resolverEjercicio()">Calcular</button>
-            <div id="resultadoEjercicio"></div>
-        </div>
-    </section>
+    <h1>Manuel History</h1>
+    <p>Contenido de la página</p>
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mq6aUd_yDTA?si=6VohldkkgEnCCcwZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
 
     <!-- Pie de página -->
     <footer>
         <p>© 2024 hello - Todos los derechos reservados.</p>
     </footer>
-
-    <!-- Incluir el archivo JavaScript -->
-    <script src="script.js"></script>
 </body>
 </html>
